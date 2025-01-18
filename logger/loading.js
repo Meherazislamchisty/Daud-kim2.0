@@ -6,7 +6,7 @@ const getCurrentTime = () => colors.gray(moment().tz('Asia/Ho_Chi_Minh').format(
 function logError(prefix, message) {
 	if (message === undefined) {
 		message = prefix;
-		prefix = "BAYJID ERROR";
+		prefix = "𝗠𝗘𝗛𝗘𝗥𝗔𝗭 ERROR";
 	}
 	process.stderr.write(`\r${`${getCurrentTime()} ${colors.redBright(`${characters} ${prefix}:`)} ${message}`}`);
 }
@@ -17,7 +17,7 @@ module.exports = {
 	warn: function (prefix, message) {
 		if (message === undefined) {
 			message = prefix;
-			prefix = "BAYJID WARN";
+			prefix = "𝗠𝗘𝗛𝗘𝗥𝗔𝗭 WARN";
 		}
 		process.stderr.write(`\r${`${getCurrentTime()} ${colors.yellowBright(`${characters} ${prefix}:`)} ${message}`}`);
 	},
@@ -38,7 +38,7 @@ module.exports = {
 	master: function (prefix, message) {
 		if (message === undefined) {
 			message = prefix;
-			prefix = "BAYJID MASTER";
+			prefix = "𝗠𝗘𝗛𝗘𝗥𝗔𝗭 MASTER";
 		}
 		process.stderr.write(`\r${`${getCurrentTime()} ${colors.hex("#eb6734", `${characters} ${prefix}:`)} ${message}`}`);
 	}
